@@ -34,15 +34,19 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class ITAddressesTest extends BaseTest {
 
+  private static final Logger LOGGER = LoggerFactory.getLogger(ITAddressesTest.class);
   private static List<Address> addresses;
   private static AddressesClient addressesClient;
   private static String name;
 
   @BeforeClass
   public static void setUp() throws IOException {
+    LOGGER.info("Testing logging in Compute integration tests");
     addresses = new ArrayList<>();
     AddressesSettings addressesSettings = AddressesSettings.newBuilder().build();
     addressesClient = AddressesClient.create(addressesSettings);
@@ -64,6 +68,7 @@ public class ITAddressesTest extends BaseTest {
 
   @Test
   public void testCRD() {
+    LOGGER.info("Testing logging in Compute integration tests -- test method");
     insertAddress();
     Address address = addressesClient.get(DEFAULT_PROJECT, DEFAULT_REGION, name);
     Assert.assertEquals(name, address.getName());
