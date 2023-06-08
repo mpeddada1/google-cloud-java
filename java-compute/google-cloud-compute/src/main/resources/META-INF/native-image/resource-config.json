@@ -1,0 +1,15 @@
+{
+  "resources":{
+  "includes":[
+    {
+      "pattern":"\\QMETA-INF/services/org.apache.maven.surefire.spi.MasterProcessChannelProcessorFactory\\E"
+    }, 
+    {
+      "pattern":"\\Qcom/google/api/client/http/google-http-client.properties\\E"
+    }, 
+    {
+      "pattern":"\\Qdependencies.properties\\E"
+    }
+  ]},
+  "bundles":[]
+}
