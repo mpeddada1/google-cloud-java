@@ -1966,12 +1966,20 @@
     ]
   },
   {
-    "name":"com.google.cloud.vision.v1.AnnotateFileRequest",
+    "name":"com.google.cloud.vision.v1.AnnotateFileResponse",
+    "queryAllPublicMethods": true,
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
   },
   {
-    "name":"com.google.cloud.vision.v1.AnnotateFileResponse",
-    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+    "name": "com.google.cloud.vision.v1.AnnotateFileResponse$Builder",
+    "queryAllPublicMethods": true,
+    "methods":[
+      {"name":"getInputConfig","parameterTypes":[] },
+      {"name":"setInputConfig","parameterTypes":["com.google.cloud.vision.v1.InputConfig"] },
+      {"name":"hasInputConfig","parameterTypes":[]},
+      {"name": "getInputConfigBuilder", "parameterTypes":[]},
+      {"name": "clearInputConfig", "parameterTypes":[]}
+    ]
   },
   {
     "name":"com.google.cloud.vision.v1.AnnotateImageRequest",
@@ -3050,6 +3058,7 @@
   },
   {
     "name":"com.google.cloud.vision.v1p3beta1.AsyncAnnotateFileResponse",
+    "queryAllPublicMethods" : true,
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
   },
   {
@@ -4750,62 +4759,695 @@
     ]
   },
   {
-    "name":"junit.framework.Test"
-  },
-  {
-    "name":"libcore.io.Memory"
-  },
-  {
-    "name":"org.apache.maven.surefire.junit4.JUnit4Provider",
-    "methods":[{"name":"<init>","parameterTypes":["org.apache.maven.surefire.api.provider.ProviderParameters"] }]
-  },
-  {
-    "name":"org.junit.runner.Description",
-    "methods":[{"name":"createSuiteDescription","parameterTypes":["java.lang.String","java.lang.annotation.Annotation[]"] }]
-  },
-  {
-    "name":"org.junit.runner.RunWith"
-  },
-  {
-    "name":"org.robolectric.Robolectric"
-  },
-  {
-    "name":"sun.misc.Unsafe",
-    "allDeclaredFields":true,
+    "name":"com.google.cloud.vision.v1.AnnotateFileResponse",
     "methods":[
-      {"name":"arrayBaseOffset","parameterTypes":["java.lang.Class"] },
-      {"name":"arrayIndexScale","parameterTypes":["java.lang.Class"] },
-      {"name":"copyMemory","parameterTypes":["long","long","long"] },
-      {"name":"copyMemory","parameterTypes":["java.lang.Object","long","java.lang.Object","long","long"] },
-      {"name":"getBoolean","parameterTypes":["java.lang.Object","long"] },
-      {"name":"getByte","parameterTypes":["long"] },
-      {"name":"getByte","parameterTypes":["java.lang.Object","long"] },
-      {"name":"getDouble","parameterTypes":["java.lang.Object","long"] },
-      {"name":"getFloat","parameterTypes":["java.lang.Object","long"] },
-      {"name":"getInt","parameterTypes":["long"] },
-      {"name":"getInt","parameterTypes":["java.lang.Object","long"] },
-      {"name":"getLong","parameterTypes":["long"] },
-      {"name":"getLong","parameterTypes":["java.lang.Object","long"] },
-      {"name":"getObject","parameterTypes":["java.lang.Object","long"] },
-      {"name":"objectFieldOffset","parameterTypes":["java.lang.reflect.Field"] },
-      {"name":"putBoolean","parameterTypes":["java.lang.Object","long","boolean"] },
-      {"name":"putByte","parameterTypes":["long","byte"] },
-      {"name":"putByte","parameterTypes":["java.lang.Object","long","byte"] },
-      {"name":"putDouble","parameterTypes":["java.lang.Object","long","double"] },
-      {"name":"putFloat","parameterTypes":["java.lang.Object","long","float"] },
-      {"name":"putInt","parameterTypes":["long","int"] },
-      {"name":"putInt","parameterTypes":["java.lang.Object","long","int"] },
-      {"name":"putLong","parameterTypes":["long","long"] },
-      {"name":"putLong","parameterTypes":["java.lang.Object","long","long"] },
-      {"name":"putObject","parameterTypes":["java.lang.Object","long","java.lang.Object"] }
+      {"name":"getError","parameterTypes":[] },
+      {"name":"getInputConfig","parameterTypes":[] },
+      {"name":"getResponses","parameterTypes":["int"] },
+      {"name":"getResponsesCount","parameterTypes":[] },
+      {"name":"getResponsesList","parameterTypes":[] },
+      {"name":"getTotalPages","parameterTypes":[] },
+      {"name":"hasError","parameterTypes":[] },
+      {"name":"hasInputConfig","parameterTypes":[] }
     ]
   },
   {
-    "name":"sun.security.provider.NativePRNG",
-    "methods":[{"name":"<init>","parameterTypes":[] }]
+    "name":"com.google.cloud.vision.v1.AnnotateFileResponse$Builder",
+    "methods":[
+      {"name":"addResponses","parameterTypes":["com.google.cloud.vision.v1.AnnotateImageResponse"] },
+      {"name":"clearError","parameterTypes":[] },
+      {"name":"clearInputConfig","parameterTypes":[] },
+      {"name":"clearResponses","parameterTypes":[] },
+      {"name":"clearTotalPages","parameterTypes":[] },
+      {"name":"getError","parameterTypes":[] },
+      {"name":"getErrorBuilder","parameterTypes":[] },
+      {"name":"getInputConfig","parameterTypes":[] },
+      {"name":"getInputConfigBuilder","parameterTypes":[] },
+      {"name":"getResponses","parameterTypes":["int"] },
+      {"name":"getResponsesBuilder","parameterTypes":["int"] },
+      {"name":"getResponsesCount","parameterTypes":[] },
+      {"name":"getResponsesList","parameterTypes":[] },
+      {"name":"getTotalPages","parameterTypes":[] },
+      {"name":"hasError","parameterTypes":[] },
+      {"name":"hasInputConfig","parameterTypes":[] },
+      {"name":"setError","parameterTypes":["com.google.rpc.Status"] },
+      {"name":"setInputConfig","parameterTypes":["com.google.cloud.vision.v1.InputConfig"] },
+      {"name":"setResponses","parameterTypes":["int","com.google.cloud.vision.v1.AnnotateImageResponse"] },
+      {"name":"setTotalPages","parameterTypes":["int"] }
+    ]
   },
   {
-    "name":"sun.security.provider.SHA",
-    "methods":[{"name":"<init>","parameterTypes":[] }]
+    "name":"com.google.cloud.vision.v1.AnnotateImageResponse",
+    "methods":[
+      {"name":"getContext","parameterTypes":[] },
+      {"name":"getCropHintsAnnotation","parameterTypes":[] },
+      {"name":"getError","parameterTypes":[] },
+      {"name":"getFaceAnnotations","parameterTypes":["int"] },
+      {"name":"getFaceAnnotationsCount","parameterTypes":[] },
+      {"name":"getFaceAnnotationsList","parameterTypes":[] },
+      {"name":"getFullTextAnnotation","parameterTypes":[] },
+      {"name":"getImagePropertiesAnnotation","parameterTypes":[] },
+      {"name":"getLabelAnnotations","parameterTypes":["int"] },
+      {"name":"getLabelAnnotationsCount","parameterTypes":[] },
+      {"name":"getLabelAnnotationsList","parameterTypes":[] },
+      {"name":"getLandmarkAnnotations","parameterTypes":["int"] },
+      {"name":"getLandmarkAnnotationsCount","parameterTypes":[] },
+      {"name":"getLandmarkAnnotationsList","parameterTypes":[] },
+      {"name":"getLocalizedObjectAnnotations","parameterTypes":["int"] },
+      {"name":"getLocalizedObjectAnnotationsCount","parameterTypes":[] },
+      {"name":"getLocalizedObjectAnnotationsList","parameterTypes":[] },
+      {"name":"getLogoAnnotations","parameterTypes":["int"] },
+      {"name":"getLogoAnnotationsCount","parameterTypes":[] },
+      {"name":"getLogoAnnotationsList","parameterTypes":[] },
+      {"name":"getProductSearchResults","parameterTypes":[] },
+      {"name":"getSafeSearchAnnotation","parameterTypes":[] },
+      {"name":"getTextAnnotations","parameterTypes":["int"] },
+      {"name":"getTextAnnotationsCount","parameterTypes":[] },
+      {"name":"getTextAnnotationsList","parameterTypes":[] },
+      {"name":"getWebDetection","parameterTypes":[] },
+      {"name":"hasContext","parameterTypes":[] },
+      {"name":"hasCropHintsAnnotation","parameterTypes":[] },
+      {"name":"hasError","parameterTypes":[] },
+      {"name":"hasFullTextAnnotation","parameterTypes":[] },
+      {"name":"hasImagePropertiesAnnotation","parameterTypes":[] },
+      {"name":"hasProductSearchResults","parameterTypes":[] },
+      {"name":"hasSafeSearchAnnotation","parameterTypes":[] },
+      {"name":"hasWebDetection","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.AnnotateImageResponse$Builder",
+    "methods":[
+      {"name":"addFaceAnnotations","parameterTypes":["com.google.cloud.vision.v1.FaceAnnotation"] },
+      {"name":"addLabelAnnotations","parameterTypes":["com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"addLandmarkAnnotations","parameterTypes":["com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"addLocalizedObjectAnnotations","parameterTypes":["com.google.cloud.vision.v1.LocalizedObjectAnnotation"] },
+      {"name":"addLogoAnnotations","parameterTypes":["com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"addTextAnnotations","parameterTypes":["com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"clearContext","parameterTypes":[] },
+      {"name":"clearCropHintsAnnotation","parameterTypes":[] },
+      {"name":"clearError","parameterTypes":[] },
+      {"name":"clearFaceAnnotations","parameterTypes":[] },
+      {"name":"clearFullTextAnnotation","parameterTypes":[] },
+      {"name":"clearImagePropertiesAnnotation","parameterTypes":[] },
+      {"name":"clearLabelAnnotations","parameterTypes":[] },
+      {"name":"clearLandmarkAnnotations","parameterTypes":[] },
+      {"name":"clearLocalizedObjectAnnotations","parameterTypes":[] },
+      {"name":"clearLogoAnnotations","parameterTypes":[] },
+      {"name":"clearProductSearchResults","parameterTypes":[] },
+      {"name":"clearSafeSearchAnnotation","parameterTypes":[] },
+      {"name":"clearTextAnnotations","parameterTypes":[] },
+      {"name":"clearWebDetection","parameterTypes":[] },
+      {"name":"getContext","parameterTypes":[] },
+      {"name":"getContextBuilder","parameterTypes":[] },
+      {"name":"getCropHintsAnnotation","parameterTypes":[] },
+      {"name":"getCropHintsAnnotationBuilder","parameterTypes":[] },
+      {"name":"getError","parameterTypes":[] },
+      {"name":"getErrorBuilder","parameterTypes":[] },
+      {"name":"getFaceAnnotations","parameterTypes":["int"] },
+      {"name":"getFaceAnnotationsBuilder","parameterTypes":["int"] },
+      {"name":"getFaceAnnotationsCount","parameterTypes":[] },
+      {"name":"getFaceAnnotationsList","parameterTypes":[] },
+      {"name":"getFullTextAnnotation","parameterTypes":[] },
+      {"name":"getFullTextAnnotationBuilder","parameterTypes":[] },
+      {"name":"getImagePropertiesAnnotation","parameterTypes":[] },
+      {"name":"getImagePropertiesAnnotationBuilder","parameterTypes":[] },
+      {"name":"getLabelAnnotations","parameterTypes":["int"] },
+      {"name":"getLabelAnnotationsBuilder","parameterTypes":["int"] },
+      {"name":"getLabelAnnotationsCount","parameterTypes":[] },
+      {"name":"getLabelAnnotationsList","parameterTypes":[] },
+      {"name":"getLandmarkAnnotations","parameterTypes":["int"] },
+      {"name":"getLandmarkAnnotationsBuilder","parameterTypes":["int"] },
+      {"name":"getLandmarkAnnotationsCount","parameterTypes":[] },
+      {"name":"getLandmarkAnnotationsList","parameterTypes":[] },
+      {"name":"getLocalizedObjectAnnotations","parameterTypes":["int"] },
+      {"name":"getLocalizedObjectAnnotationsBuilder","parameterTypes":["int"] },
+      {"name":"getLocalizedObjectAnnotationsCount","parameterTypes":[] },
+      {"name":"getLocalizedObjectAnnotationsList","parameterTypes":[] },
+      {"name":"getLogoAnnotations","parameterTypes":["int"] },
+      {"name":"getLogoAnnotationsBuilder","parameterTypes":["int"] },
+      {"name":"getLogoAnnotationsCount","parameterTypes":[] },
+      {"name":"getLogoAnnotationsList","parameterTypes":[] },
+      {"name":"getProductSearchResults","parameterTypes":[] },
+      {"name":"getProductSearchResultsBuilder","parameterTypes":[] },
+      {"name":"getSafeSearchAnnotation","parameterTypes":[] },
+      {"name":"getSafeSearchAnnotationBuilder","parameterTypes":[] },
+      {"name":"getTextAnnotations","parameterTypes":["int"] },
+      {"name":"getTextAnnotationsBuilder","parameterTypes":["int"] },
+      {"name":"getTextAnnotationsCount","parameterTypes":[] },
+      {"name":"getTextAnnotationsList","parameterTypes":[] },
+      {"name":"getWebDetection","parameterTypes":[] },
+      {"name":"getWebDetectionBuilder","parameterTypes":[] },
+      {"name":"hasContext","parameterTypes":[] },
+      {"name":"hasCropHintsAnnotation","parameterTypes":[] },
+      {"name":"hasError","parameterTypes":[] },
+      {"name":"hasFullTextAnnotation","parameterTypes":[] },
+      {"name":"hasImagePropertiesAnnotation","parameterTypes":[] },
+      {"name":"hasProductSearchResults","parameterTypes":[] },
+      {"name":"hasSafeSearchAnnotation","parameterTypes":[] },
+      {"name":"hasWebDetection","parameterTypes":[] },
+      {"name":"setContext","parameterTypes":["com.google.cloud.vision.v1.ImageAnnotationContext"] },
+      {"name":"setCropHintsAnnotation","parameterTypes":["com.google.cloud.vision.v1.CropHintsAnnotation"] },
+      {"name":"setError","parameterTypes":["com.google.rpc.Status"] },
+      {"name":"setFaceAnnotations","parameterTypes":["int","com.google.cloud.vision.v1.FaceAnnotation"] },
+      {"name":"setFullTextAnnotation","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation"] },
+      {"name":"setImagePropertiesAnnotation","parameterTypes":["com.google.cloud.vision.v1.ImageProperties"] },
+      {"name":"setLabelAnnotations","parameterTypes":["int","com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"setLandmarkAnnotations","parameterTypes":["int","com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"setLocalizedObjectAnnotations","parameterTypes":["int","com.google.cloud.vision.v1.LocalizedObjectAnnotation"] },
+      {"name":"setLogoAnnotations","parameterTypes":["int","com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"setProductSearchResults","parameterTypes":["com.google.cloud.vision.v1.ProductSearchResults"] },
+      {"name":"setSafeSearchAnnotation","parameterTypes":["com.google.cloud.vision.v1.SafeSearchAnnotation"] },
+      {"name":"setTextAnnotations","parameterTypes":["int","com.google.cloud.vision.v1.EntityAnnotation"] },
+      {"name":"setWebDetection","parameterTypes":["com.google.cloud.vision.v1.WebDetection"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.AsyncAnnotateFileResponse",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.AsyncBatchAnnotateFilesResponse",
+    "methods":[
+      {"name":"getDefaultInstance","parameterTypes":[] },
+      {"name":"getResponses","parameterTypes":["int"] },
+      {"name":"getResponsesCount","parameterTypes":[] },
+      {"name":"getResponsesList","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.AsyncBatchAnnotateFilesResponse$Builder",
+    "methods":[
+      {"name":"addResponses","parameterTypes":["com.google.cloud.vision.v1.AsyncAnnotateFileResponse"] },
+      {"name":"clearResponses","parameterTypes":[] },
+      {"name":"getResponses","parameterTypes":["int"] },
+      {"name":"getResponsesBuilder","parameterTypes":["int"] },
+      {"name":"getResponsesCount","parameterTypes":[] },
+      {"name":"getResponsesList","parameterTypes":[] },
+      {"name":"setResponses","parameterTypes":["int","com.google.cloud.vision.v1.AsyncAnnotateFileResponse"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Block",
+    "methods":[
+      {"name":"getBlockType","parameterTypes":[] },
+      {"name":"getBlockTypeValue","parameterTypes":[] },
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getParagraphs","parameterTypes":["int"] },
+      {"name":"getParagraphsCount","parameterTypes":[] },
+      {"name":"getParagraphsList","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Block$BlockType",
+    "methods":[
+      {"name":"getValueDescriptor","parameterTypes":[] },
+      {"name":"valueOf","parameterTypes":["com.google.protobuf.Descriptors$EnumValueDescriptor"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Block$Builder",
+    "methods":[
+      {"name":"addParagraphs","parameterTypes":["com.google.cloud.vision.v1.Paragraph"] },
+      {"name":"clearBlockType","parameterTypes":[] },
+      {"name":"clearBoundingBox","parameterTypes":[] },
+      {"name":"clearConfidence","parameterTypes":[] },
+      {"name":"clearParagraphs","parameterTypes":[] },
+      {"name":"clearProperty","parameterTypes":[] },
+      {"name":"getBlockType","parameterTypes":[] },
+      {"name":"getBlockTypeValue","parameterTypes":[] },
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getBoundingBoxBuilder","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getParagraphs","parameterTypes":["int"] },
+      {"name":"getParagraphsBuilder","parameterTypes":["int"] },
+      {"name":"getParagraphsCount","parameterTypes":[] },
+      {"name":"getParagraphsList","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getPropertyBuilder","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"setBlockType","parameterTypes":["com.google.cloud.vision.v1.Block$BlockType"] },
+      {"name":"setBlockTypeValue","parameterTypes":["int"] },
+      {"name":"setBoundingBox","parameterTypes":["com.google.cloud.vision.v1.BoundingPoly"] },
+      {"name":"setConfidence","parameterTypes":["float"] },
+      {"name":"setParagraphs","parameterTypes":["int","com.google.cloud.vision.v1.Paragraph"] },
+      {"name":"setProperty","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$TextProperty"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.BoundingPoly",
+    "methods":[
+      {"name":"getNormalizedVertices","parameterTypes":["int"] },
+      {"name":"getNormalizedVerticesCount","parameterTypes":[] },
+      {"name":"getNormalizedVerticesList","parameterTypes":[] },
+      {"name":"getVertices","parameterTypes":["int"] },
+      {"name":"getVerticesCount","parameterTypes":[] },
+      {"name":"getVerticesList","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.BoundingPoly$Builder",
+    "methods":[
+      {"name":"addNormalizedVertices","parameterTypes":["com.google.cloud.vision.v1.NormalizedVertex"] },
+      {"name":"addVertices","parameterTypes":["com.google.cloud.vision.v1.Vertex"] },
+      {"name":"clearNormalizedVertices","parameterTypes":[] },
+      {"name":"clearVertices","parameterTypes":[] },
+      {"name":"getNormalizedVertices","parameterTypes":["int"] },
+      {"name":"getNormalizedVerticesBuilder","parameterTypes":["int"] },
+      {"name":"getNormalizedVerticesCount","parameterTypes":[] },
+      {"name":"getNormalizedVerticesList","parameterTypes":[] },
+      {"name":"getVertices","parameterTypes":["int"] },
+      {"name":"getVerticesBuilder","parameterTypes":["int"] },
+      {"name":"getVerticesCount","parameterTypes":[] },
+      {"name":"getVerticesList","parameterTypes":[] },
+      {"name":"setNormalizedVertices","parameterTypes":["int","com.google.cloud.vision.v1.NormalizedVertex"] },
+      {"name":"setVertices","parameterTypes":["int","com.google.cloud.vision.v1.Vertex"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.CropHintsAnnotation",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.EntityAnnotation",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.FaceAnnotation",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.GcsSource",
+    "methods":[
+      {"name":"getUri","parameterTypes":[] },
+      {"name":"getUriBytes","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.GcsSource$Builder",
+    "methods":[
+      {"name":"clearUri","parameterTypes":[] },
+      {"name":"getUri","parameterTypes":[] },
+      {"name":"setUri","parameterTypes":["java.lang.String"] },
+      {"name":"setUriBytes","parameterTypes":["com.google.protobuf.ByteString"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ImageAnnotationContext",
+    "methods":[
+      {"name":"getPageNumber","parameterTypes":[] },
+      {"name":"getUri","parameterTypes":[] },
+      {"name":"getUriBytes","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ImageAnnotationContext$Builder",
+    "methods":[
+      {"name":"clearPageNumber","parameterTypes":[] },
+      {"name":"clearUri","parameterTypes":[] },
+      {"name":"getPageNumber","parameterTypes":[] },
+      {"name":"getUri","parameterTypes":[] },
+      {"name":"setPageNumber","parameterTypes":["int"] },
+      {"name":"setUri","parameterTypes":["java.lang.String"] },
+      {"name":"setUriBytes","parameterTypes":["com.google.protobuf.ByteString"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ImageAnnotatorClient",
+    "allDeclaredFields":true,
+    "queryAllDeclaredMethods":true,
+    "queryAllPublicMethods":true,
+    "methods":[
+      {"name":"awaitTermination","parameterTypes":["long","java.util.concurrent.TimeUnit"] },
+      {"name":"close","parameterTypes":[] },
+      {"name":"isShutdown","parameterTypes":[] },
+      {"name":"isTerminated","parameterTypes":[] },
+      {"name":"shutdown","parameterTypes":[] },
+      {"name":"shutdownNow","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ImageAnnotatorClientBeanInfo"
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ImageAnnotatorClientCustomizer"
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ImageProperties",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.InputConfig",
+    "methods":[
+      {"name":"getContent","parameterTypes":[] },
+      {"name":"getGcsSource","parameterTypes":[] },
+      {"name":"getMimeType","parameterTypes":[] },
+      {"name":"getMimeTypeBytes","parameterTypes":[] },
+      {"name":"hasGcsSource","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.InputConfig$Builder",
+    "methods":[
+      {"name":"clearContent","parameterTypes":[] },
+      {"name":"clearGcsSource","parameterTypes":[] },
+      {"name":"clearMimeType","parameterTypes":[] },
+      {"name":"getContent","parameterTypes":[] },
+      {"name":"getGcsSource","parameterTypes":[] },
+      {"name":"getGcsSourceBuilder","parameterTypes":[] },
+      {"name":"getMimeType","parameterTypes":[] },
+      {"name":"hasGcsSource","parameterTypes":[] },
+      {"name":"setContent","parameterTypes":["com.google.protobuf.ByteString"] },
+      {"name":"setGcsSource","parameterTypes":["com.google.cloud.vision.v1.GcsSource"] },
+      {"name":"setMimeType","parameterTypes":["java.lang.String"] },
+      {"name":"setMimeTypeBytes","parameterTypes":["com.google.protobuf.ByteString"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.LocalizedObjectAnnotation",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.NormalizedVertex",
+    "methods":[
+      {"name":"getX","parameterTypes":[] },
+      {"name":"getY","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.NormalizedVertex$Builder",
+    "methods":[
+      {"name":"clearX","parameterTypes":[] },
+      {"name":"clearY","parameterTypes":[] },
+      {"name":"getX","parameterTypes":[] },
+      {"name":"getY","parameterTypes":[] },
+      {"name":"setX","parameterTypes":["float"] },
+      {"name":"setY","parameterTypes":["float"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Page",
+    "methods":[
+      {"name":"getBlocks","parameterTypes":["int"] },
+      {"name":"getBlocksCount","parameterTypes":[] },
+      {"name":"getBlocksList","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getHeight","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getWidth","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Page$Builder",
+    "methods":[
+      {"name":"addBlocks","parameterTypes":["com.google.cloud.vision.v1.Block"] },
+      {"name":"clearBlocks","parameterTypes":[] },
+      {"name":"clearConfidence","parameterTypes":[] },
+      {"name":"clearHeight","parameterTypes":[] },
+      {"name":"clearProperty","parameterTypes":[] },
+      {"name":"clearWidth","parameterTypes":[] },
+      {"name":"getBlocks","parameterTypes":["int"] },
+      {"name":"getBlocksBuilder","parameterTypes":["int"] },
+      {"name":"getBlocksCount","parameterTypes":[] },
+      {"name":"getBlocksList","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getHeight","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getPropertyBuilder","parameterTypes":[] },
+      {"name":"getWidth","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"setBlocks","parameterTypes":["int","com.google.cloud.vision.v1.Block"] },
+      {"name":"setConfidence","parameterTypes":["float"] },
+      {"name":"setHeight","parameterTypes":["int"] },
+      {"name":"setProperty","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$TextProperty"] },
+      {"name":"setWidth","parameterTypes":["int"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Paragraph",
+    "methods":[
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getWords","parameterTypes":["int"] },
+      {"name":"getWordsCount","parameterTypes":[] },
+      {"name":"getWordsList","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Paragraph$Builder",
+    "methods":[
+      {"name":"addWords","parameterTypes":["com.google.cloud.vision.v1.Word"] },
+      {"name":"clearBoundingBox","parameterTypes":[] },
+      {"name":"clearConfidence","parameterTypes":[] },
+      {"name":"clearProperty","parameterTypes":[] },
+      {"name":"clearWords","parameterTypes":[] },
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getBoundingBoxBuilder","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getPropertyBuilder","parameterTypes":[] },
+      {"name":"getWords","parameterTypes":["int"] },
+      {"name":"getWordsBuilder","parameterTypes":["int"] },
+      {"name":"getWordsCount","parameterTypes":[] },
+      {"name":"getWordsList","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"setBoundingBox","parameterTypes":["com.google.cloud.vision.v1.BoundingPoly"] },
+      {"name":"setConfidence","parameterTypes":["float"] },
+      {"name":"setProperty","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$TextProperty"] },
+      {"name":"setWords","parameterTypes":["int","com.google.cloud.vision.v1.Word"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.ProductSearchResults",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.SafeSearchAnnotation",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Symbol",
+    "methods":[
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getText","parameterTypes":[] },
+      {"name":"getTextBytes","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Symbol$Builder",
+    "methods":[
+      {"name":"clearBoundingBox","parameterTypes":[] },
+      {"name":"clearConfidence","parameterTypes":[] },
+      {"name":"clearProperty","parameterTypes":[] },
+      {"name":"clearText","parameterTypes":[] },
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getBoundingBoxBuilder","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getPropertyBuilder","parameterTypes":[] },
+      {"name":"getText","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"setBoundingBox","parameterTypes":["com.google.cloud.vision.v1.BoundingPoly"] },
+      {"name":"setConfidence","parameterTypes":["float"] },
+      {"name":"setProperty","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$TextProperty"] },
+      {"name":"setText","parameterTypes":["java.lang.String"] },
+      {"name":"setTextBytes","parameterTypes":["com.google.protobuf.ByteString"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation",
+    "methods":[
+      {"name":"getPages","parameterTypes":["int"] },
+      {"name":"getPagesCount","parameterTypes":[] },
+      {"name":"getPagesList","parameterTypes":[] },
+      {"name":"getText","parameterTypes":[] },
+      {"name":"getTextBytes","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$Builder",
+    "methods":[
+      {"name":"addPages","parameterTypes":["com.google.cloud.vision.v1.Page"] },
+      {"name":"clearPages","parameterTypes":[] },
+      {"name":"clearText","parameterTypes":[] },
+      {"name":"getPages","parameterTypes":["int"] },
+      {"name":"getPagesBuilder","parameterTypes":["int"] },
+      {"name":"getPagesCount","parameterTypes":[] },
+      {"name":"getPagesList","parameterTypes":[] },
+      {"name":"getText","parameterTypes":[] },
+      {"name":"setPages","parameterTypes":["int","com.google.cloud.vision.v1.Page"] },
+      {"name":"setText","parameterTypes":["java.lang.String"] },
+      {"name":"setTextBytes","parameterTypes":["com.google.protobuf.ByteString"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$DetectedBreak",
+    "methods":[
+      {"name":"getIsPrefix","parameterTypes":[] },
+      {"name":"getType","parameterTypes":[] },
+      {"name":"getTypeValue","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$DetectedBreak$BreakType",
+    "methods":[
+      {"name":"getValueDescriptor","parameterTypes":[] },
+      {"name":"valueOf","parameterTypes":["com.google.protobuf.Descriptors$EnumValueDescriptor"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$DetectedBreak$Builder",
+    "methods":[
+      {"name":"clearIsPrefix","parameterTypes":[] },
+      {"name":"clearType","parameterTypes":[] },
+      {"name":"getIsPrefix","parameterTypes":[] },
+      {"name":"getType","parameterTypes":[] },
+      {"name":"getTypeValue","parameterTypes":[] },
+      {"name":"setIsPrefix","parameterTypes":["boolean"] },
+      {"name":"setType","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$DetectedBreak$BreakType"] },
+      {"name":"setTypeValue","parameterTypes":["int"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$DetectedLanguage",
+    "methods":[
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getLanguageCode","parameterTypes":[] },
+      {"name":"getLanguageCodeBytes","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$DetectedLanguage$Builder",
+    "methods":[
+      {"name":"clearConfidence","parameterTypes":[] },
+      {"name":"clearLanguageCode","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getLanguageCode","parameterTypes":[] },
+      {"name":"setConfidence","parameterTypes":["float"] },
+      {"name":"setLanguageCode","parameterTypes":["java.lang.String"] },
+      {"name":"setLanguageCodeBytes","parameterTypes":["com.google.protobuf.ByteString"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$TextProperty",
+    "methods":[
+      {"name":"getDetectedBreak","parameterTypes":[] },
+      {"name":"getDetectedLanguages","parameterTypes":["int"] },
+      {"name":"getDetectedLanguagesCount","parameterTypes":[] },
+      {"name":"getDetectedLanguagesList","parameterTypes":[] },
+      {"name":"hasDetectedBreak","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.TextAnnotation$TextProperty$Builder",
+    "methods":[
+      {"name":"addDetectedLanguages","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$DetectedLanguage"] },
+      {"name":"clearDetectedBreak","parameterTypes":[] },
+      {"name":"clearDetectedLanguages","parameterTypes":[] },
+      {"name":"getDetectedBreak","parameterTypes":[] },
+      {"name":"getDetectedBreakBuilder","parameterTypes":[] },
+      {"name":"getDetectedLanguages","parameterTypes":["int"] },
+      {"name":"getDetectedLanguagesBuilder","parameterTypes":["int"] },
+      {"name":"getDetectedLanguagesCount","parameterTypes":[] },
+      {"name":"getDetectedLanguagesList","parameterTypes":[] },
+      {"name":"hasDetectedBreak","parameterTypes":[] },
+      {"name":"setDetectedBreak","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$DetectedBreak"] },
+      {"name":"setDetectedLanguages","parameterTypes":["int","com.google.cloud.vision.v1.TextAnnotation$DetectedLanguage"] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Vertex",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.WebDetection",
+    "methods":[{"name":"newBuilder","parameterTypes":[] }]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Word",
+    "methods":[
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getSymbols","parameterTypes":["int"] },
+      {"name":"getSymbolsCount","parameterTypes":[] },
+      {"name":"getSymbolsList","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"newBuilder","parameterTypes":[] }
+    ]
+  },
+  {
+    "name":"com.google.cloud.vision.v1.Word$Builder",
+    "methods":[
+      {"name":"addSymbols","parameterTypes":["com.google.cloud.vision.v1.Symbol"] },
+      {"name":"clearBoundingBox","parameterTypes":[] },
+      {"name":"clearConfidence","parameterTypes":[] },
+      {"name":"clearProperty","parameterTypes":[] },
+      {"name":"clearSymbols","parameterTypes":[] },
+      {"name":"getBoundingBox","parameterTypes":[] },
+      {"name":"getBoundingBoxBuilder","parameterTypes":[] },
+      {"name":"getConfidence","parameterTypes":[] },
+      {"name":"getProperty","parameterTypes":[] },
+      {"name":"getPropertyBuilder","parameterTypes":[] },
+      {"name":"getSymbols","parameterTypes":["int"] },
+      {"name":"getSymbolsBuilder","parameterTypes":["int"] },
+      {"name":"getSymbolsCount","parameterTypes":[] },
+      {"name":"getSymbolsList","parameterTypes":[] },
+      {"name":"hasBoundingBox","parameterTypes":[] },
+      {"name":"hasProperty","parameterTypes":[] },
+      {"name":"setBoundingBox","parameterTypes":["com.google.cloud.vision.v1.BoundingPoly"] },
+      {"name":"setConfidence","parameterTypes":["float"] },
+      {"name":"setProperty","parameterTypes":["com.google.cloud.vision.v1.TextAnnotation$TextProperty"] },
+      {"name":"setSymbols","parameterTypes":["int","com.google.cloud.vision.v1.Symbol"] }
+    ]
+  },
+  {
+    "name":"com.google.common.util.concurrent.AbstractFuture",
+    "fields":[
+      {"name":"listeners"},
+      {"name":"value"},
+      {"name":"waiters"}
+    ]
+  },
+  {
+    "name":"com.google.common.util.concurrent.AbstractFuture$Waiter",
+    "fields":[
+      {"name":"next"},
+      {"name":"thread"}
+    ]
+  },
+  {
+    "name":"com.google.protobuf.ExtensionRegistry",
+    "methods":[{"name":"getEmptyRegistry","parameterTypes":[] }]
   }
 ]
