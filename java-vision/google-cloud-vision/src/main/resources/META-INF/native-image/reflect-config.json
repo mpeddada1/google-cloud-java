@@ -2196,48 +2196,6 @@
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
   },
   {
-    "name":"com.google.cloud.vision.v1.ImageAnnotatorClientHttpJsonTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1.ImageAnnotatorClientTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
     "name":"com.google.cloud.vision.v1.ImportProductSetsGcsSource",
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
   },
@@ -2862,36 +2820,6 @@
     ]
   },
   {
-    "name":"com.google.cloud.vision.v1p1beta1.ImageAnnotatorClientHttpJsonTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p1beta1.ImageAnnotatorClientTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
     "name":"com.google.cloud.vision.v1p2beta1.AnnotateImageRequest",
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
   },
@@ -2986,40 +2914,6 @@
       {"name":"getResponsesCount","parameterTypes":[] },
       {"name":"getResponsesList","parameterTypes":[] },
       {"name":"setResponses","parameterTypes":["int","com.google.cloud.vision.v1p2beta1.AnnotateImageResponse"] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p2beta1.ImageAnnotatorClientHttpJsonTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p2beta1.ImageAnnotatorClientTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
     ]
   },
   {
@@ -3145,40 +3039,6 @@
   {
     "name":"com.google.cloud.vision.v1p3beta1.BoundingPoly",
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p3beta1.ImageAnnotatorClientHttpJsonTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p3beta1.ImageAnnotatorClientTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
   },
   {
     "name":"com.google.cloud.vision.v1p3beta1.ImportProductSetsGcsSource",
@@ -3905,48 +3765,6 @@
   {
     "name":"com.google.cloud.vision.v1p4beta1.GcsDestination",
     "methods":[{"name":"newBuilder","parameterTypes":[] }]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p4beta1.ImageAnnotatorClientHttpJsonTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1p4beta1.ImageAnnotatorClientTest",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicConstructors":true,
-    "methods":[
-      {"name":"<init>","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"asyncBatchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateFilesTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesExceptionTest","parameterTypes":[] },
-      {"name":"batchAnnotateImagesTest","parameterTypes":[] },
-      {"name":"setUp","parameterTypes":[] },
-      {"name":"startStaticServer","parameterTypes":[] },
-      {"name":"stopServer","parameterTypes":[] },
-      {"name":"tearDown","parameterTypes":[] }
-    ]
   },
   {
     "name":"com.google.cloud.vision.v1p4beta1.ImportProductSetsGcsSource",
@@ -5081,26 +4899,6 @@
       {"name":"setUri","parameterTypes":["java.lang.String"] },
       {"name":"setUriBytes","parameterTypes":["com.google.protobuf.ByteString"] }
     ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1.ImageAnnotatorClient",
-    "allDeclaredFields":true,
-    "queryAllDeclaredMethods":true,
-    "queryAllPublicMethods":true,
-    "methods":[
-      {"name":"awaitTermination","parameterTypes":["long","java.util.concurrent.TimeUnit"] },
-      {"name":"close","parameterTypes":[] },
-      {"name":"isShutdown","parameterTypes":[] },
-      {"name":"isTerminated","parameterTypes":[] },
-      {"name":"shutdown","parameterTypes":[] },
-      {"name":"shutdownNow","parameterTypes":[] }
-    ]
-  },
-  {
-    "name":"com.google.cloud.vision.v1.ImageAnnotatorClientBeanInfo"
-  },
-  {
-    "name":"com.google.cloud.vision.v1.ImageAnnotatorClientCustomizer"
   },
   {
     "name":"com.google.cloud.vision.v1.ImageProperties",
